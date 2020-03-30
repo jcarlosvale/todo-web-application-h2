@@ -9,13 +9,13 @@ import javax.validation.constraints.Size;
 
 @Entity
 public class Todo {
-    
-	@Id
-	@GeneratedValue
-	private int id;
-    
-	private String user;
-    
+
+    @Id
+    @GeneratedValue
+    private int id;
+
+    private String user;
+
     @Size(min=10, message="Enter at least 10 Characters...")
     private String desc;
 
@@ -23,11 +23,11 @@ public class Todo {
     private boolean isDone;
 
     public Todo() {
-    		super();
+        super();
     }
-    
+
     public Todo(int id, String user, String desc, Date targetDate,
-            boolean isDone) {
+                boolean isDone) {
         super();
         this.id = id;
         this.user = user;
