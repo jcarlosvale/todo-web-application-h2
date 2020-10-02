@@ -79,3 +79,7 @@ We will deploy to Docker as a WAR
 	</executions>
 </plugin>
 ```
+
+##DOCKER COMMAND
+
+    docker run -p 8080:8080 jcarlosvale/todo-web-application-h2:0.0.1-SNAPSHOT
